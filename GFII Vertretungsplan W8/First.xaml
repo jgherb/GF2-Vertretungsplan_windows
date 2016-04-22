@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="GFII_Vertretungsplan_W8.FirstPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GFII_Vertretungsplan"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Bitte melde dich mit dem Vertretungsplan-Passwort an" VerticalAlignment="Top" FontSize="26.667" TextAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="168" FontSize="26.667" Margin="0,0,0,70"/>
+        <Button x:Name="button" Content="Fertig!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="117" Margin="0,50,0,0" Click="button_Click" FontSize="26.667"/>
+
+        <TextBlock x:Name="textBlock_Copy" TextWrapping="Wrap" Text="Entwickelt von Noscio.eu" VerticalAlignment="Bottom" FontSize="26.667" TextAlignment="Center" Tapped="textBlock_Copy_Tapped"/>
+    </Grid>
+</Page>
