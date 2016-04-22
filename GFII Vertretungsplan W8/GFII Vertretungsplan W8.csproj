@@ -96,6 +96,7 @@
     <Compile Include="Second.xaml.cs">
       <DependentUpon>Second.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SecurityValues.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
