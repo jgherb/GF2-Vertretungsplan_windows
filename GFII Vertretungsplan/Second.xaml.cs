@@ -24,7 +24,6 @@ namespace GFII_Vertretungsplan
     {
         public SecondPage()
         {
-            string device_id = "winDEV";
             this.InitializeComponent();
         }
 

@@ -51,7 +51,9 @@ namespace GFII_Vertretungsplan
                 throw new Exception("Invalid header value: " + header);
             }
 
-            Uri requestUri = new Uri(SecurityValues.auth_url + passwordBox.Password);
+            String url = SecurityValues.auth_url;
+            url = url.Replace("@@password@@", passwordBox.Password);
+            Uri requestUri = new Uri(url);
 
             //Send the GET request asynchronously and retrieve the response as a string.
             Windows.Web.Http.HttpResponseMessage httpResponse = new Windows.Web.Http.HttpResponseMessage();
